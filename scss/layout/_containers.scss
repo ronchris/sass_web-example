@@ -1,0 +1,53 @@
+.primary-content {
+  @extend %content;
+  @extend %centered;
+  @extend %t-border;
+	padding-top: 25px;
+  padding-bottom: 95px;
+
+  @media #{$brk-narrow} {
+    width: 100% !important;
+    padding: 20px;
+    border-top: none;
+  }
+
+  @media #{$brk-wide} {
+    width: 90% !important;
+  }
+}
+
+.secondary-content {
+  @extend %content;
+  @extend %t-border;
+  @extend %clearfix;
+  padding-top: 80px;
+	padding-bottom: 70px;
+  border-bottom: 2px solid $color-top-border;
+
+  @media #{$brk-narrow} {
+    width: 100% !important;
+    padding: 20px;
+    border-top: none;
+  }
+
+  @media #{$brk-wide} {
+    width: 90% !important;
+  }
+}
+
+.wildlife {
+  color: white;
+  text-align: left;
+  padding: 18% 24%;
+  border-top: 10px solid $color-link-default;
+  margin: 105px 0 60px;
+  background: $mako url('#{$path-img}/bear.jpg') no-repeat center;
+  background-size: cover;
+  box-shadow: inset 0 0 50px 10px rgba($black, .8);
+  border-radius: $br;
+
+  @media #{$brk-wide} {
+    padding: 10% 12%;
+    margin: 50px 0 20px;
+  }
+}
